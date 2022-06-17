@@ -1,0 +1,22 @@
+{
+    "plugins": ["plugins.bart"],
+    "charachters": [
+        {
+            "type": "wizard",
+            "name": "Striger"
+        },
+        {
+            "type": "witcher",
+            "name": "Geralt"
+        },
+        {
+            "type": "sorcerer",
+            "name": "Yenef"
+        },
+        {
+            "type": "bart",
+            "name": "Hehooch",
+            "age": 45
+        }
+    ]
+}
