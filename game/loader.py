@@ -1,11 +1,20 @@
+from asyncio import protocols
 import importlib
+from typing import Protocol
 import  game.factory 
-class PluginInterface:
+
+
+class PluginInterface(Protocol):
+    """
+    Protocol for typing
+    """
     @staticmethod
-    def initilize( game_factory: game.factory) -> None:
+    def initilize( _: game.factory) -> None:
         """Init the plugin"""
 
 def import_module(name:str) ->  PluginInterface:
+    """"Load stuff"""
+
     return importlib.import_module(name)
 
 
